@@ -4,11 +4,25 @@
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]>
-<xml><w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument>
-<o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml>
-<![endif]-->
+	<meta name="viewport" content="width=900"><!-- 고정 해상도 설정 -->
 	<style>
+		.row-content {
+			width: 900px !important;
+			margin: 0 auto;
+		}
+
+		/* 모바일 반응형 비활성화 */
+		@media (max-width: 768px) {
+			.row-content {
+				width: 900px !important;
+			}
+
+			.stack .column {
+				width: 100% !important;
+				display: block !important;
+			}
+		}
+
 		* {
 			box-sizing: border-box;
 		}
@@ -29,7 +43,7 @@
 		}
 
 		p {
-			line-height: inherit
+			line-height: inherit;
 		}
 
 		.desktop_hide,
@@ -49,36 +63,7 @@
 			font-size: 75%;
 			line-height: 0;
 		}
-
-		@media (max-width:768px) {
-			.mobile_hide {
-				display: none;
-			}
-
-			.row-content {
-				width: 100% !important;
-			}
-
-			.stack .column {
-				width: 100%;
-				display: block;
-			}
-
-			.mobile_hide {
-				min-height: 0;
-				max-height: 0;
-				max-width: 0;
-				overflow: hidden;
-				font-size: 0px;
-			}
-
-			.desktop_hide,
-			.desktop_hide table {
-				display: table !important;
-				max-height: none !important;
-			}
-		}
-	</style><!--[if mso ]><style>sup, sub { font-size: 100% !important; } sup { mso-text-raise:10% } sub { mso-text-raise:-10% }</style> <![endif]--><!--[if true]><style>.forceBgColor{background-color: white !important}</style><![endif]-->
+	</style>
 </head>
 
 <body class="body forceBgColor" style="background-color: transparent; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
